@@ -1,7 +1,5 @@
 
 require 'cuba'
-require 'rack/protection'
-require 'securerandom'
 require 'da99_rack_middleware'
 
 Cuba.use Da99_Rack_Middleware
