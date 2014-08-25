@@ -3,6 +3,8 @@ GEM
   specs:
     cuba (3.3.0)
       rack
+    da99_rack_middleware (1.0.0)
+      rack-protection (> 1.5)
     dotenv (0.11.1)
       dotenv-deployment (~> 0.0.2)
     dotenv-deployment (0.0.2)
@@ -25,6 +27,6 @@ PLATFORMS
 
 DEPENDENCIES
   cuba
+  da99_rack_middleware
   foreman
-  rack-protection
   unicorn

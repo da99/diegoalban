@@ -2,9 +2,9 @@
 require 'cuba'
 require 'rack/protection'
 require 'securerandom'
+require 'da99_rack_middleware'
 
-Cuba.use Rack::Session::Cookie, :secret => SecureRandom.urlsafe_base64(nil, true)
-Cuba.use Rack::Protection
+Cuba.use Da99_Rack_Middleware
 
 Cuba.define do
 
