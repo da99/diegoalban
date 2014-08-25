@@ -9,7 +9,7 @@ git push
 git push heroku master
 
 echo ''
-echo 'Testing: ----'
 curl http://www.diegoalban.com/
+echo ''
 
 
