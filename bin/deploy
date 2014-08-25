@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# -*- bash -*-
+#
+#
+set -u -e -o pipefail
+
+
+git push
+git push heroku master
+
+echo ''
+echo 'Testing: ----'
+curl http://www.diegoalban.com/
+
+
