@@ -1,4 +1,4 @@
 diegoalban
 ==========
 
-Moved to: [https://github.com/da99/megauni](https://github.com/da99/megauni)
+Very basic code for a homepage.
