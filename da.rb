@@ -3,7 +3,11 @@ require 'cuba'
 require 'da99_rack_protect'
 
 Cuba.use Da99_Rack_Protect do |mid|
-  mid.config :host, :localhost, 'diegoalban.com', 'diegoalban.herokuapp.com'
+  if (ENV['IS_DEV'])
+    mid.config :host, :localhost, 'diegoalban.com', 'diegoalban.herokuapp.com'
+  else
+    mid.config :host, 'diegoalban.com', 'www.diegoalban.com', 'diegoalban.herokuapp.com'
+  end
 end
 
 Cuba.define do
