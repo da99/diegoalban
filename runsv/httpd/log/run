@@ -1,0 +1,9 @@
+#!/bin/sh
+#
+#
+# exec logger -p daemon.notice -t www_paradise
+set -u -e
+sv_name=diegoalban_httpd
+mkdir -p        /progs/logs/$sv_name
+chown da:da -R  /progs/logs/$sv_name
+exec svlogd -ttt /progs/logs/$sv_name

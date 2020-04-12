@@ -1,0 +1,12 @@
+#!/bin/sh
+
+exec 2>&1
+
+echo "=== Starting darkhttpd: $(date)"
+exec darkhttpd /apps/diegoalban/public \
+  --no-server-id \
+  --no-keepalive \
+  --uid da --gid da \
+  --no-listing \
+  --chroot \
+  --maxconn 10
