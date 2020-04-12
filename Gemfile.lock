@@ -8,8 +8,8 @@ GEM
     foreman (0.78.0)
       thor (~> 0.19.1)
     kgio (2.9.3)
-    rack (1.6.4)
-    rack-protection (1.5.3)
+    rack (2.1.2)
+    rack-protection (2.0.8.1)
       rack
     raindrops (0.15.0)
     thor (0.19.1)
