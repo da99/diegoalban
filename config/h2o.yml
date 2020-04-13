@@ -1,0 +1,17 @@
+user: nobody
+hosts:
+  "surferhearts.com":
+    listen:
+      port: 80
+    paths:
+      "/":
+        proxy.reverse.url: http://127.0.0.1:81/
+  "diegoalban.com":
+    listen:
+      port: 80
+    paths:
+      "/":
+        file.dir: /apps/diegoalban/public
+
+access-log: /progs/logs/h2o.access
+error-log: /progs/logs/h20.error

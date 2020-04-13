@@ -2,11 +2,5 @@
 
 exec 2>&1
 
-echo "=== Starting darkhttpd: $(date)"
-exec darkhttpd /apps/diegoalban/public \
-  --no-server-id \
-  --no-keepalive \
-  --uid _darkhttpd --gid _darkhttpd \
-  --no-listing \
-  --chroot \
-  --maxconn 10
+echo "=== Starting h2o: $(date)"
+exec h2o -c /apps/diegoalban/config/h2o.yml
