@@ -1,14 +1,19 @@
 user: nobody
+listen: 80
 hosts:
-  "surferhearts.com":
-    listen:
-      port: 80
+  "surferhearts.com:80":
     paths:
       "/":
         proxy.reverse.url: http://127.0.0.1:81/
-  "diegoalban.com":
-    listen:
-      port: 80
+  "www.surferhearts.com:80":
+    paths:
+      "/":
+        proxy.reverse.url: http://127.0.0.1:81/
+  "diegoalban.com:80":
+    paths:
+      "/":
+        file.dir: /apps/diegoalban/public
+  "www.diegoalban.com:80":
     paths:
       "/":
         file.dir: /apps/diegoalban/public
