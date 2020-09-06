@@ -7,12 +7,22 @@ hosts:
         proxy.reverse.url: http://127.0.0.1:81/
       "/.well-known/acme-challenge":
         file.dir: /progs/http/acme/.well-known/acme-challenge
+    listen:
+      port: 443
+      ssl:
+        key-file: /progs/http/certbot/live/www.surferhearts.com/privkey.pem
+        certificate-file: /progs/http/certbot/live/www.surferhearts.com/fullchain.pem
   "www.surferhearts.com:80":
     paths:
       "/":
         proxy.reverse.url: http://127.0.0.1:81/
       "/.well-known/acme-challenge":
         file.dir: /progs/http/acme/.well-known/acme-challenge
+    listen:
+      port: 443
+      ssl:
+        key-file: /progs/http/certbot/live/www.surferhearts.com/privkey.pem
+        certificate-file: /progs/http/certbot/live/www.surferhearts.com/fullchain.pem
   "diegoalban.com:80":
     paths:
       "/":
