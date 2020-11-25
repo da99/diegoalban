@@ -1,0 +1,13 @@
+---
+name: diegoalban
+version: 0.0.0
+targets:
+  diegoalban:
+    main: bin/__.cr
+development_dependencies:
+  da_spec:
+    github: da99/da_spec
+
+dependencies:
+  da:
+    github: da99/da

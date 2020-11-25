@@ -1,0 +1,23 @@
+name = "diegoalban-dev"
+account_id = "9c4dc75e07b3fd04442ceac71a2532be"
+type = "webpack"
+workers_dev = false
+
+[site]
+bucket = "./Public"
+entry-point = "./"
+
+[dev]
+port = 4567
+local_protocol = "http"
+upstream_protocol = "https"
+
+[env.dev]
+workers_dev = true
+
+
+[env.production]
+workers_dev = false
+name = "diegoalban"
+zone_id = "8ffb9a5d8acf48c3ba63a615b83005bf"
+route = "www.diegoalban.com/*"

@@ -1,0 +1,22 @@
+{
+  "private": true,
+  "name": "diegoalban",
+  "version": "0.0.0",
+  "description": "Main package for diegoalban.com",
+  "main": "index.js",
+  "dependencies": {
+    "@cloudflare/kv-asset-handler": ">0.0.0",
+    "@cloudflare/wrangler": ">0.0.0"
+  },
+  "devDependencies": {
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://github/da99/diegoalban.git"
+  },
+  "author": "da99",
+  "license": "MIT"
+}
