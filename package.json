@@ -5,10 +5,10 @@
   "description": "Main package for diegoalban.com",
   "main": "index.js",
   "dependencies": {
-    "@cloudflare/kv-asset-handler": ">0.0.0",
-    "@cloudflare/wrangler": ">0.0.0"
+    "@cloudflare/kv-asset-handler": ">0.0.0"
   },
   "devDependencies": {
+    "@cloudflare/wrangler": ">0.0.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
