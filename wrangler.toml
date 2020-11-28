@@ -5,7 +5,6 @@ workers_dev = false
 
 [site]
 bucket = "./Public"
-entry-point = "./"
 
 [dev]
 port = 4567
