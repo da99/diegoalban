@@ -1,17 +1,26 @@
 name = "diegoalban-dev"
 account_id = "9c4dc75e07b3fd04442ceac71a2532be"
-type = "webpack"
+type = "javascript"
 workers_dev = false
 
 [site]
-bucket = "./Public"
+bucket = "./dist/Public"
+
+[build]
+upload_dir = "./dist/worker"
+upload_format = "modules"
+
+[durable_objects]
+bindings = [
+  { name = "COUNTER", class_name = "Counter" }
+]
 
 [dev]
 port = 4567
 local_protocol = "http"
 upstream_protocol = "https"
 
-[env.dev]
+[env.staging]
 workers_dev = true
 
 
