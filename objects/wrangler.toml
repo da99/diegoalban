@@ -1,0 +1,15 @@
+name = "objects"
+account_id = '9c4dc75e07b3fd04442ceac71a2532be'
+type = 'javascript'
+workers_dev = true
+
+[build]
+command = "sh/build"
+upload.format = "service-worker"
+watch_dir = "./tmp/wrangler_dev_watch"
+
+[dev]
+port = 4567
+local_protocol = "http"
+upstream_protocol = "https"
+

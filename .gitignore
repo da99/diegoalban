@@ -12,7 +12,7 @@
 ## Specific to RubyMotion:
 .dat*
 .repl_history
-build/
+/build/
 
 
 # unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
@@ -25,3 +25,4 @@ build/
 /lib/
 /dist/
 /worker/
+/bin/diegoalban

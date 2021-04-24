@@ -1,0 +1,11 @@
+{
+  "name": "objects",
+  "version": "0.0.0",
+  "description": "",
+  "main": "dist/worker/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "da99",
+  "license": "MIT"
+}
